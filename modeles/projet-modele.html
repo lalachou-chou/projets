@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Résumé de votre projet à personnaliser.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Titre de votre projet — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <!-- Ces champs alimentent aussi la carte de ce projet sur l'accueil.
+           Conservez les attributs data-project-... lorsque vous changez le texte. -->
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projet personnel</p>
+        <h1 data-project-title>Titre de votre projet</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Thème</li><li data-project-tag>Outil</li></ul>
+        <p class="detail-summary" data-project-summary>Présentez votre réalisation en une ou deux phrases courtes.</p>
+        <!-- Lien vers la réalisation. Supprimez ce lien si elle n'est pas publique. -->
+        <!-- Décommentez cette ligne et renseignez le lien de votre réalisation :
+        <a class="button" data-project-link href="https://exemple.fr" rel="noopener noreferrer">Ouvrir le projet <span aria-hidden="true">↗</span></a>
+        -->
+      </header>
+      <!-- Image locale dans images/ ; chemin relatif depuis ce fichier. -->
+      <a class="image-preview" data-image-modal href="../images/portfolio.svg" aria-label="Agrandir l’image"><img class="detail-cover" data-project-image src="../images/portfolio.svg" alt="Description du visuel de votre projet à personnaliser." width="1000" height="620"></a>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Expliquez concrètement votre rôle et les actions que vous avez menées.</p>
+          
+        </aside>
+        <div><!-- Remplacez librement les sections ci-dessous par votre récit. -->
+          <section><h2>Le point de départ</h2><p>Quel besoin ou quel problème souhaitiez-vous traiter ? Dans quel contexte ?</p></section>
+          <section><h2>Ma démarche</h2><p>Expliquez les principales étapes, vos décisions et les outils utilisés.</p></section>
+          <section><h2>La place de l’IA</h2><p>Si vous avez utilisé l’IA, précisez à quoi elle vous a servi, ce que vous avez corrigé et comment vous avez vérifié ses propositions. Supprimez cette section si elle ne s’applique pas.</p></section>
+          <section><h2>Le résultat et les apprentissages</h2><p>Décrivez le résultat réel et ce que ce projet vous a appris. Vous pouvez ajouter des captures avec des balises img et un texte alternatif.</p></section></div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
+

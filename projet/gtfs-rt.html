@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une carte des bus en temps réel, réalisée en une heure avec ChatGPT : flux GTFS-RT, données ouvertes et comparaison aux horaires GTFS dans une page HTML unique.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Projet GTFS-RT — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projet personnel · Octobre 2026</p>
+        <h1 data-project-title>Projet GTFS-RT</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Transport</li><li data-project-tag>GTFS-RT</li><li data-project-tag>Open data</li><li data-project-tag>Sol</li></ul>
+        <p class="detail-summary" data-project-summary>Une carte de France pour visualiser les bus en temps réel et, lorsque les horaires théoriques sont disponibles, estimer leur avance ou leur retard. Le tout dans une page HTML unique.</p>
+        <a class="button" data-project-link href="https://github.com/lalachou-chou/project_gtfsrt" rel="noopener noreferrer" target="_blank">Voir le projet sur GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+      <figure class="detail-figure">
+        <a class="image-preview" data-image-modal href="../images/gtfs-rt-carte.png" aria-label="Agrandir l’image"><img data-project-image data-project-image-fit="contain" src="../images/gtfs-rt-carte.png" alt="Carte des transports en temps réel en France avec des marqueurs de bus, une fiche de véhicule indiquant son prochain arrêt et sa ponctualité, et des vues des territoires d’outre-mer." width="1808" height="929"></a>
+        <figcaption>Les véhicules sur la carte et le détail d’une course : trajet, prochain arrêt et ponctualité.</figcaption>
+      </figure>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Définir précisément le résultat attendu, fixer la contrainte d’une page HTML unique et guider la réalisation avec ChatGPT, en m’appuyant sur mon expérience dans les transports.</p>
+          <p>Réalisé en une heure avec ChatGPT 6 Sol.</p>
+          <p>HTML · GTFS-RT · GTFS · OpenStreetMap</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Une occasion de poursuivre les essais</h2>
+            <p>ChatGPT me narguait depuis plusieurs semaines avec son offre d’essai gratuite d’un mois. Je terminais mes tests avec l’IA en local et je pensais plutôt partir sur Claude, mais je me suis dit : pourquoi pas ?</p>
+            <p>J’ai donc lancé un premier projet avec ChatGPT 6 Sol. Comme je travaille dans les transports, j’ai choisi une idée simple : une carte de France sur laquelle voir les bus en temps réel.</p>
+          </section>
+          <section>
+            <h2>Une page HTML, une heure de réalisation</h2>
+            <p>La contrainte était claire : le projet devait tenir dans une seule page HTML, utilisable avec une connexion Internet, sans autre installation nécessaire.</p>
+            <p>J’avais une idée très précise du résultat que je souhaitais obtenir. Le projet n’a donc duré qu’une heure.</p>
+          </section>
+          <section>
+            <h2>Récupérer les données ouvertes</h2>
+            <p>La recherche des données se fait en priorité sur data.gouv.fr. J’ai aussi ajouté une liste de quelques sites qui mettent leurs flux GTFS à disposition.</p>
+            <p>Les données retenues sont libres d’accès. J’ai toutefois préféré écarter les flux dont la configuration CORS empêchait la lecture directe depuis le navigateur, pour conserver la simplicité de la page unique.</p>
+          </section>
+          <section>
+            <h2>Du temps réel à la ponctualité</h2>
+            <p>La page lit en priorité les flux GTFS-RT et affiche les positions disponibles sur une carte fondée sur les données OpenStreetMap.</p>
+            <p>Lorsque les données GTFS correspondantes sont également disponibles, elles permettent de rapprocher les informations en temps réel des horaires théoriques et d’en déduire une avance ou un retard.</p>
+          </section>
+          <section>
+            <h2>Le résultat</h2>
+            <p>Une carte qui rassemble les véhicules des réseaux dont les flux sont exploitables, avec le détail des courses et les informations disponibles sur leur progression et leur ponctualité.</p>
+            <p>La couverture dépend donc des données accessibles : l’objectif était de visualiser simplement les flux disponibles, sans chercher à intégrer les sources bloquées par les restrictions CORS.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

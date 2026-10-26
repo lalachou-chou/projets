@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mes projets dans les transports : un Gem renseigné sur une base de données, l’analyse de logs avec Gemini et un comparateur de tracés GTFS. Mon retour d’expérience.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Mes projets pour le travail — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projets professionnels · Octobre 2026</p>
+        <h1 data-project-title>Mes projets pour le travail</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Gemini</li><li data-project-tag>Base de données</li><li data-project-tag>Analyse de logs</li><li data-project-tag>GTFS</li></ul>
+        <p class="detail-summary" data-project-summary>Trois usages dans mon quotidien professionnel : un Gem renseigné sur la structure d’une base de données, l’analyse ciblée de grands volumes de logs et un outil de comparaison visuelle des tracés de lignes GTFS.</p>
+      </header>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Configurer un Gem avec le schéma de la base de données, guider l’analyse de logs pour repérer des anomalies et des schémas récurrents, et développer un comparateur visuel de tracés GTFS.</p>
+          <p>Je ne présente pas de captures du comparateur GTFS : développé au travail avec les moyens de mon entreprise, il lui appartient.</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Trouver une utilité à Gemini</h2>
+            <p>Au travail, on m’a donné accès à Gemini, avec un quota de tokens à utiliser, mais sans connexion MCP. J’ai d’abord eu du mal à lui trouver une utilité : ses réponses ne me convainquaient pas.</p>
+            <p>À titre personnel, je m’en sers assez peu. Il m’a surtout aidée à configurer mes IA locales : je le trouve doué pour les recherches Google et pour parcourir la documentation. Il m’a aussi aidée à réparer mon lave-vaisselle et ma chasse d’eau… Mais au travail, il me restait à trouver le bon usage.</p>
+          </section>
+          <section>
+            <h2>Donner à un Gem le contexte de la base</h2>
+            <p>On m’a ensuite autorisée à lui transmettre la structure de la base de données, sans le connecter à la base elle-même.</p>
+            <p>J’ai donc créé un Gem, un assistant personnalisé dans Gemini, en lui fournissant le schéma de la base, les index et les relations entre les tables. Avec ce contexte, ses réponses sont devenues pertinentes pour mon travail, cela me permet de réécrire ou modifier une requête SQL bien plus rapidement qu'à la main dans le cas de structures complexes.</p>
+          </section>
+          <section>
+            <h2>Analyser de grands volumes de logs</h2>
+            <p>J’ai aussi utilisé Gemini pour analyser et comparer de grands volumes de logs, ou journaux d’activité. Je lui transmettais ces informations en précisant les points à examiner.</p>
+            <p>L’objectif était de faire ressortir les informations utiles à mes recherches, notamment des anomalies et des schémas récurrents (« patterns »). Mon rôle consistait à orienter l’analyse sur des questions précises.</p>
+          </section>
+          <section>
+            <h2>Comparer les tracés de lignes GTFS</h2>
+            <p>J’ai également développé un outil de comparaison des tracés de lignes. Dans mon travail dans les transports, on a souvent besoin de visualiser les données d’un GTFS pour comprendre les erreurs qu’il contient.</p>
+            <p>L’outil accepte trois types d’import :</p>
+            <ul>
+              <li>Un GTFS complet.</li>
+              <li>Un GTFS sans fichier <code>shapes.txt</code> : le tracé est alors construit à partir des points d’arrêt.</li>
+              <li>Le fichier <code>shapes.txt</code> seul.</li>
+            </ul>
+            <p>L’outil permet de comparer les tracés visuellement sur une carte openstreetmap et d’afficher les courses associées lorsque ces données sont présentes dans l’import. Une fonction de recherche facilite la sélection des lignes à comparer.</p>
+          </section>
+          <section>
+            <h2>Mon bilan sur Gemini</h2>
+            <p>Malgré ces quelques usages pertinents, j’ai globalement été très déçue de Gemini. J’ai été honnêtement très frustrée à l'utilisation et il m'a rappelé les allez-retour que j'avais eu sur ChatGPT gratuit.</p>
+            <p>Au moment où j’écris ce bilan, une nouvelle version de Gemini vient de sortir, mais je n’ai pas encore eu l’occasion de la tester réellement. Mon avis porte donc sur la version que j’ai utilisée jusqu’ici.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

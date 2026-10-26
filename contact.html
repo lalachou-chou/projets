@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, nosnippet">
+  <meta name="description" content="Me contacter pour échanger autour de mes projets.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <title>Me contacter — Mes projets</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="contact.js" defer></script>
+</head>
+<body class="contact-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="contact.html" rel="nofollow" aria-current="page">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <section class="contact-card" aria-labelledby="contact-title">
+      <p class="eyebrow">Faisons connaissance</p>
+      <h1 id="contact-title">Clara Matarasso</h1>
+      <p class="contact-location">France</p>
+      <p class="contact-intro">Pour échanger autour de mes projets, vous pouvez me contacter par e-mail.</p>
+      <button class="button" id="reveal-email" type="button" aria-controls="email-details" aria-expanded="false" hidden>Afficher mon adresse e-mail</button>
+      <div id="email-details" hidden>
+        <p class="contact-email" id="contact-email" tabindex="-1"></p>
+        <button class="button" id="copy-email" type="button">Copier l’adresse</button>
+      </div>
+      <p class="contact-status" id="contact-status" role="status"></p>
+      <noscript><p class="notice">Activez JavaScript pour afficher mon adresse e-mail.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

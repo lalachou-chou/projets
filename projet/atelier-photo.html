@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AtelierPhoto : un projet d’application locale de tri et de première retouche des photos, avec des profils qui apprennent les préférences de chaque utilisateur.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>AtelierPhoto — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projet personnel · Octobre 2026</p>
+        <h1 data-project-title>AtelierPhoto</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Photographie</li><li data-project-tag>IA locale</li><li data-project-tag>CLIP</li><li data-project-tag>DINOv3</li><li data-project-tag>Astra</li></ul>
+        <p class="detail-summary" data-project-summary>Une application pensée pour trier les photos et proposer une première retouche en apprenant les préférences de chaque utilisateur, avec des profils distincts et un traitement entièrement local.</p>
+        <a class="button" data-project-link href="https://github.com/lalachou-chou/AtelierPhoto" rel="noopener noreferrer" target="_blank">Voir le projet sur GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+      <figure class="detail-figure">
+        <a class="image-preview" data-image-modal href="../images/atelier-photo.png" aria-label="Agrandir l’image"><img data-project-image data-project-image-fit="contain" src="../images/atelier-photo.png" alt="Interface AtelierPhoto : choix du profil à gauche, galerie de photos retenues, à vérifier ou écartées au centre, et aperçu avec réglages de retouche à droite." width="1409" height="896"></a>
+        <figcaption>AtelierPhoto : profils, tri des images et proposition de retouche dans une même interface. <a data-image-modal href="../images/atelier-photo.png" rel="noopener noreferrer">Agrandir la capture</a>.</figcaption>
+      </figure>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Partir du besoin d’un photographe, étudier les solutions existantes, définir les profils d’apprentissage et piloter des essais comparatifs de modèles avec Astra.</p>
+          <p>Développement avec ChatGPT Astra 6.</p>
+          <p>Compatibilité visée : Windows et macOS.</p>
+          <p>Contrainte : aucun appel sortant, toutes les opérations doivent rester locales.</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Les questions d’un ami photographe</h2>
+            <p>Un ami photographe me posait beaucoup de questions sur les logiciels et l’IA. Il avait entendu parler d’outils capables de trier les photos avec l’IA, mais trouvait leurs prix élevés. Lequel choisir ? Et pouvait-on faire quelque chose nous-mêmes ?</p>
+            <p>Je venais de prendre la version d’essai de ChatGPT et j’avais déjà bien exploré l’IA en local. J’ai donc commencé mes recherches : offres du marché, logiciels, modèles d’IA, prix et fonctionnement.</p>
+          </section>
+          <section>
+            <h2>Utiliser les créneaux disponibles</h2>
+            <p>Dans les offres que j’avais repérées, je retenais un budget d’environ 40 € pour quelque chose qui semblait convenable de l’extérieur. Dans mon calcul, cela représentait deux mois d’abonnement à une IA : pouvais-je faire mieux en utilisant ses créneaux disponibles ?</p>
+            <p>J’ai tendance à épuiser mon forfait à 20 €, mais lorsque de gros blocs de code sont terminés, les tests m’occupent un moment. J’ai choisi ChatGPT Astra 6 parce que mon Claude était déjà très sollicité. Dans mon cas, le quota de tokens annoncé comme hebdomadaire sur ChatGPT se réinitialisait tous les trois jours.</p>
+          </section>
+          <section>
+            <h2>Apprendre les préférences de chaque profil</h2>
+            <p>Le but d’AtelierPhoto est de trier des photos et d’appliquer un premier filtre. Chaque profil doit recevoir des exemples de travail déjà effectué par l’utilisateur : les photos du lot initial, ou « rush », et celles qu’il a finalement conservées.</p>
+            <p>Ces références doivent permettre au logiciel de déduire les préférences de l’utilisateur : gérer les doublons, tenir compte du flou et proposer une première retouche qui se rapproche de ses choix.</p>
+            <p>L’application doit aussi apprendre au fil de l’usage. Les préférences et les apprentissages sont rattachés à chaque profil : changer de profil revient donc à utiliser d’autres critères de sélection et de retouche.</p>
+          </section>
+          <section>
+            <h2>Comparer CLIP et DINOv3</h2>
+            <p>Le projet a d’abord été réalisé avec CLIP. J’ai ensuite mené plusieurs benchmarks avec Astra pour comparer différents modèles, procédés et tailles, afin de voir ce qui convenait le mieux au projet.</p>
+            <p>Dans mes essais, avec peu de données — environ 150 photos conservées issues des rushs — CLIP donnait les meilleurs résultats. Avec davantage de données, DINOv3 semblait plus prometteur, et il était surtout beaucoup plus rapide dans les configurations comparées.</p>
+          </section>
+          <section>
+            <h2>Prévoir Windows et macOS</h2>
+            <p>La compatibilité macOS était un prérequis : mon ami est plutôt du côté de la pomme. L’application devait donc pouvoir fonctionner sur Windows comme sur macOS.</p>
+            <p>Comme je ne possède pas de Mac, j’ai sollicité un autre ami, développeur, pour m’aider à préparer la version Mac et son fichier <code>.command</code>. Pour le reste, il a fallu faire confiance à l’IA, sans pouvoir tout vérifier moi-même sur cette plateforme.</p>
+          </section>
+          <section>
+            <h2>Tout garder en local</h2>
+            <p>L’autre contrainte était essentielle pour moi : aucun appel sortant. Le tri, les retouches et l’apprentissage des préférences doivent se faire localement, sans envoyer les photos dans le cloud.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

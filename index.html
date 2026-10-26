@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une sélection de projets personnels : les réalisations, la démarche et les outils utilisés.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Mes projets — Réalisations & démarches</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="skip-link" href="#contenu">Aller aux projets</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main id="contenu" class="container">
+    <section class="intro" aria-labelledby="titre">
+      <div><p class="eyebrow">Créations & explorations</p><h1 id="titre">Mes projets</h1><p class="intro-text">Ce que j’ai réalisé, comment<br class="mobile-break"> et avec quels outils.</p></div>
+      <span class="project-count" id="project-count" aria-label="Nombre de projets"></span>
+    </section>
+    <div id="project-status" class="status" role="status"><span class="loading-dot" aria-hidden="true"></span>Chargement des projets…</div>
+    <div id="projects" class="projects" aria-busy="true"></div>
+    <button id="retry" class="button retry" type="button" hidden>Réessayer</button>
+    <noscript><p class="notice">Activez JavaScript pour afficher la galerie complète. Vous pouvez aussi consulter ces pages directement :</p><ul><li><a href="projet/dofus-resource-assistant.html">Overlay pour Dofus</a></li><li><a href="projet/ia-locale.html">L’IA en local</a></li><li><a href="projet/gtfs-rt.html">Projet GTFS-RT</a></li><li><a href="projet/jeu-video.html">Jeu vidéo de survie</a></li><li><a href="projet/atelier-photo.html">AtelierPhoto</a></li><li><a href="projet/outils-travail.html">Mes projets pour le travail</a></li><li><a href="projet/portfolio.html">Ce site, construit avec l’IA</a></li></ul></noscript>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

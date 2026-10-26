@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mon retour d’expérience sur l’IA en local avec Docker, Ollama et Open WebUI : tests de modèles, limites de 16 Go de VRAM et réflexion sur les coûts.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>L’IA en local — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Expérimentation personnelle · Septembre 2026</p>
+        <h1 data-project-title>L’IA en local</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Docker</li><li data-project-tag>Ollama</li><li data-project-tag>Open WebUI</li><li data-project-tag>CUDA</li></ul>
+        <p class="detail-summary" data-project-summary>Faire tourner des modèles d’IA sur ma propre machine pour explorer leurs réglages, observer leurs performances et confronter les promesses aux limites de mon matériel.</p>
+      </header>
+      <figure class="detail-figure">
+        <a class="image-preview" data-image-modal href="../images/ia-locale-open-webui.png" aria-label="Agrandir l’image"><img data-project-image data-project-image-fit="contain" src="../images/ia-locale-open-webui.png" alt="Interface Open WebUI avec qwen3:14b sélectionné et un menu proposant plusieurs modèles Qwen et DeepSeek." width="834" height="441"></a>
+        <figcaption>Open WebUI : une même interface pour essayer plusieurs modèles locaux.</figcaption>
+      </figure>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Installer l’environnement local, configurer l’accélération GPU, tester différents modèles et leurs réglages, puis évaluer l’intérêt de cette approche pour mes usages.</p>
+          <p>Docker · Ollama · Open WebUI · NVIDIA CUDA</p>
+          <p>Matériel disponible : 16 Go de mémoire vidéo (VRAM).</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Des promesses à l’expérimentation</h2>
+            <p>Après avoir testé ChatGPT dans sa version gratuite, je voulais découvrir l’IA en local. Quelles performances pouvais-je obtenir ? À quel coût ? Les vidéos qui en parlaient étaient-elles trop élogieuses ?</p>
+            <p>Le meilleur moyen de me faire un avis était de l’essayer sur ma propre machine.</p>
+          </section>
+          <section>
+            <h2>Un environnement simple à prendre en main</h2>
+            <p>J’ai opté pour une installation avec Docker, Ollama et Open WebUI : une solution que j’ai trouvée simple et efficace pour commencer mes essais.</p>
+            <p>J’ai mis en place NVIDIA CUDA pour utiliser l’accélération GPU, puis testé le débordement du GPU vers le CPU avec des modèles plus volumineux.</p>
+          </section>
+          <section>
+            <h2>Explorer les modèles et leurs réglages</h2>
+            <p>J’ai testé différents modèles, regardé les tokens défiler et surtout pris plaisir à explorer les paramètres et les réglages fins de chacun.</p>
+            <p>Cette expérimentation m’a permis de mieux voir les possibilités et les limites de mon installation. Malheureusement, mes 16 Go de VRAM m’ont vite limitée dans les modèles que je voulais essayer.</p>
+          </section>
+          <section>
+            <h2>Chercher d’autres possibilités</h2>
+            <p>J’ai regardé du côté de la location de GPU, mais aussi de solutions de fortune autour de Kaggle. Un rapide calcul des coûts et du temps à y consacrer m’a finalement fait estimer que ces pistes avaient peu d’intérêt pour mon usage.</p>
+            <p>En parallèle, j’en discutais avec un ami qui a testé le <a href="https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install" rel="noopener noreferrer" target="_blank">projet Qwen de MiaAI-Lab pour GPU NVIDIA de 16 Go</a>. Mon impression à l’issue de nos échanges : c’est amusant pour créer de petits jeux comme Snake, mais cela restait loin de ce que j’avais envie de faire.</p>
+          </section>
+          <section>
+            <h2>Une équipe d’agents, une idée en attente</h2>
+            <p>J’aurais voulu associer une IA locale à Claude pour confier les tâches les plus simples au modèle local, décharger l’agent principal et économiser des tokens.</p>
+            <p>J’ai donc exploré les « harness », les environnements qui permettent d’organiser et de piloter des agents. L’idée était de créer une équipe avec un chef d’équipe et différents agents à qui répartir le travail. J’ai laissé cette piste de côté pour le moment.</p>
+          </section>
+          <section>
+            <h2>Mon bilan</h2>
+            <p>Pour mes usages et avec mon matériel, je trouve l’IA locale peu avantageuse économiquement, notamment en tenant compte du coût de l’électricité pour un particulier en France.</p>
+            <p>Pour un petit assistant personnel, je pense toutefois que cette approche pourrait convenir.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un portfolio codé avec ChatGPT Astra 6, sans PHP : des pages HTML et un fichier JSON pour ajouter facilement de nouveaux projets.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Ce site, construit avec l’IA — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <!-- Ces champs alimentent aussi la carte de ce projet sur l'accueil.
+           Conservez les attributs data-project-... lorsque vous changez le texte. -->
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projet personnel · Octobre 2026</p>
+        <h1 data-project-title>Ce site, construit avec l’IA</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Web</li><li data-project-tag>Astra</li><li data-project-tag>JSON</li></ul>
+        <p class="detail-summary" data-project-summary>Un portfolio codé avec ChatGPT Astra 6, sans PHP, avec une structure simple et un fichier JSON pour ajouter facilement de nouvelles pages projet.</p>
+        <!-- Lien vers la réalisation. Supprimez ce lien si elle n'est pas publique. -->
+        <a class="button" data-project-link href="https://github.com/lalachou-chou/projets" rel="noopener noreferrer" target="_blank">Voir le projet sur GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+      <!-- Image locale dans images/ ; chemin relatif depuis ce fichier. -->
+      <a class="image-preview" data-image-modal href="../images/portfolio.svg" aria-label="Agrandir l’image"><img class="detail-cover" data-project-image src="../images/portfolio.svg" alt="Illustration d’un éditeur HTML et de la galerie de projets affichée dans un navigateur." width="1000" height="620"></a>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Définir le besoin, choisir le graphisme de départ et fixer les contraintes : une structure simple, sans PHP, et des pages faciles à ajouter.</p>
+          <p>HTML · CSS · JavaScript · JSON</p>
+          <p>Code réalisé avec ChatGPT Astra 6.</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Le point de départ</h2>
+            <p>Je voulais créer un espace à joindre à mon CV pour présenter mes réalisations et expliquer ma contribution à chacune. La priorité était de permettre de comprendre rapidement chaque projet, sur ordinateur comme sur mobile.</p>
+          </section>
+          <section>
+            <h2>Choisir le graphisme de départ</h2>
+            <p>Les échanges ont surtout porté sur le graphisme de base : une palette neutre, des visuels généreux et une présentation centrée sur les projets.</p>
+          </section>
+          <section>
+            <h2>Une réalisation très rapide avec Astra 6</h2>
+            <p>Le site a été codé avec ChatGPT Astra 6. En dehors du choix du graphisme de départ, sa réalisation initiale a été très rapide, sans itération.</p>
+            <p>"Exécution durant 10m 50s > Le site est codé, fidèle à la maquette et adapté aux mobiles."</p>
+            <p>Ce n'est qu'un simple petit site, voué à être hébergé sur Github, je sais le faire à la main, mais c'est vrai que la rapidité d'exécution m'a quelque peu déconcertée.</p>
+          </section>
+          <section>
+            <h2>Une structure simple, sans PHP</h2>
+            <p>Je voulais éviter le PHP pour garder une structure simple. Le site repose donc sur des fichiers HTML, CSS et JavaScript, adaptés à un hébergement statique.</p>
+            <p>Mais je voulais aussi pouvoir ajouter de nouvelles pages sans me prendre la tête ni devoir revoir l’accueil à chaque fois.</p>
+          </section>
+          <section>
+            <h2>Un fichier JSON pour ajouter les projets</h2>
+            <p>C’est là que j'ai opté pour le fichier <code>projets.json</code>. Il contient la liste des pages à afficher, dans l’ordre souhaité.</p>
+            <p>Chaque projet possède sa propre page HTML. Pour en ajouter un, il suffit de créer cette page en conservant les champs prévus, puis d’ajouter son nom dans le fichier JSON. L’accueil en récupère automatiquement le titre, le résumé, la contribution et l’image lorsqu’il y en a une.</p>
+            <p>Les styles communs gardent une présentation cohérente. Je peux ainsi enrichir le portfolio sans modifier le fonctionnement de la galerie.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
+

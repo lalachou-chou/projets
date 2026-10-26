@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un jeu de survie sandbox en 2D isométrique, développé avec Phaser et l’aide de l’IA : génération procédurale, conception des mécaniques et direction artistique.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>Jeu vidéo de survie — Mes projets</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../image-modal.js" defer></script>
+</head>
+<body class="detail-page" id="haut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" href="../index.html" aria-label="Projets, accueil">Projets<span aria-hidden="true">.</span></a><a class="button header-contact" href="../contact.html" rel="nofollow">Me contacter</a></div></header>
+  <main class="container" id="contenu">
+    <nav class="breadcrumb" aria-label="Navigation"><a href="../index.html"><span aria-hidden="true">←</span> Tous les projets</a></nav>
+    <article>
+      <header class="detail-heading">
+        <p class="eyebrow" data-project-label>Projet en développement</p>
+        <h1 data-project-title>Jeu vidéo de survie</h1>
+        <ul class="project-tags" aria-label="Thèmes du projet"><li data-project-tag>Phaser</li><li data-project-tag>2D isométrique</li><li data-project-tag>Génération procédurale</li><li data-project-tag>Astra</li><li data-project-tag>Opus</li></ul>
+        <p class="detail-summary" data-project-summary>Un jeu de survie sandbox en 2D isométrique, avec génération procédurale, jouable dans le navigateur et intégrable dans une application. Un projet qui mêle conception, tests et direction artistique.</p>
+      </header>
+      <figure class="detail-figure">
+        <a class="image-preview" data-image-modal href="../images/jeu-video-actuel.png" aria-label="Agrandir l’image"><img data-project-image data-project-image-fit="contain" src="../images/jeu-video-actuel.png" alt="Version actuelle du jeu : quartier en vue isométrique, personnage près d’une voiture et d’une maison éclairée, avec indicateurs de survie, carnet de route et mini-carte." width="1891" height="877"></a>
+        <figcaption>Le jeu en cours de développement : environnement détaillé et interface de survie. <a data-image-modal href="../images/jeu-video-actuel.png">Agrandir la capture</a>.</figcaption>
+      </figure>
+      <div class="detail-body">
+        <aside class="contribution-aside" aria-labelledby="contribution">
+          <h2 id="contribution">Ma contribution</h2>
+          <p data-project-contribution>Concevoir les mécaniques et l’histoire, guider le développement avec l’IA, tester le ressenti en jeu et construire une direction artistique cohérente, des sprites à la narration.</p>
+          <p>Début du projet : <time datetime="2026-10-04">4 octobre 2026</time>.</p>
+          <p>Développement principal, traductions et sprites : Opus 5.5.</p>
+          <p>Premières étapes, certaines briques de code, images, musique et narration : Astra 6.</p>
+          <p>Le jeu est toujours en développement. Une sortie sur Steam est prévue ; j’ajouterai le lien ici lorsqu’il sera disponible.</p>
+        </aside>
+        <div>
+          <section>
+            <h2>Un projet plus ambitieux</h2>
+            <p>J’avais envie de me lancer dans un vrai projet, plus ambitieux. J’ai commencé avec ChatGPT 6 Astra, puis, au bout d’une semaine, j’ai pris Claude. Le code a ensuite été principalement réalisé avec Opus 5.5, avec quelques briques produites par Astra 6. J’ai également utilisé Opus pour les traductions et les sprites, et Astra pour les images et la narration.</p>
+            <p>Il s’agit d’un jeu de survie sandbox en 2D isométrique, avec génération procédurale. Il est jouable dans un navigateur et peut être intégré dans une application.</p>
+          </section>
+          <section>
+            <h2>Jusqu’où aller avec Phaser ?</h2>
+            <p>Je connaissais déjà Phaser, mais je ne pensais pas qu’on pouvait obtenir quelque chose d’aussi détaillé avec. En toute franchise, mon idée de départ était d’utiliser Godot.</p>
+            <p>J’ai préféré voir dans quelle direction Astra partait, puis je me suis dit : pourquoi pas, voyons jusqu’où on peut aller ! Je pense que l’équipe de Phaser serait contente de voir le résultat.</p>
+          </section>
+          <section>
+            <h2>Construire et faire évoluer le jeu</h2>
+            <p>Le projet a commencé le 4 octobre. J’ai d’abord établi un plan, puis développé les fonctionnalités une à une. Une fois la base en place, j’ai enrichi les mécaniques et amélioré les graphismes progressivement.</p>
+            <p>Plusieurs passes sur le code ont permis de garder la documentation à jour. Certains fichiers ont aussi dû être séparés pour conserver une taille raisonnable et faciliter leur suivi.</p>
+          </section>
+          <section>
+            <h2>Reprendre les lumières à la base</h2>
+            <p>La gestion des lumières a demandé une véritable reprise : cycle jour/nuit, éclairages intérieurs allumés ou éteints, lampe de poche, phares de voiture et diffusion de chaque source lumineuse.</p>
+            <p>Au départ, cette fonctionnalité était mal codée et mal prise en charge par l’IA. J’ai dû la revoir pas à pas pour obtenir un code plus propre et arrêter de provoquer des régressions à chaque modification.</p>
+          </section>
+          <section>
+            <h2>Tester le ressenti, pas seulement le fonctionnement</h2>
+            <p>Tout en « vibe codant », j’ai effectué de nombreux tests, noté mes retours et fait appliquer les ajustements nécessaires.</p>
+            <p>Comme dans toute conception de jeu vidéo, une fonctionnalité pouvait sembler intéressante sur le papier, puis ne pas donner le bon ressenti une fois en jeu. Il m’est arrivé de revoir toute son intégration pour retrouver l’expérience que je souhaitais.</p>
+          </section>
+          <section>
+            <h2>De l’histoire à l’introduction</h2>
+            <p>La création de l’introduction avec Astra a été particulièrement intéressante. J’ai commencé par lui écrire l’histoire entière du jeu, puis je lui ai fait générer des images à partir de cette histoire. Plusieurs itérations ont été nécessaires pour obtenir le style que je voulais.</p>
+            <p>J’ai ensuite fait rédiger une narration sous forme de texte. Cette base a aussi servi à créer des affiches, des prospectus, des journaux et des graffitis intégrés au jeu.</p>
+            <p>Pour accompagner le texte en images, j’ai demandé un storyboard pour chaque grande étape de la narration. Après avoir sélectionné les propositions, j’ai choisi celle dont je préférais le style et fait harmoniser les autres autour de cette référence.</p>
+            <p>J’ai précisé, pour chaque image, les éléments à mettre en valeur et le ton recherché. Ce suivi était nécessaire pour conserver une direction artistique cohérente : au fil des générations, j’ai constaté que l’IA avait tendance à s’en éloigner.</p>
+            <figure class="detail-figure">
+              <a class="image-preview" data-image-modal href="../images/jeu-video-storyboard-la-promesse.png" aria-label="Agrandir l’image"><img src="../images/jeu-video-storyboard-la-promesse.png" alt="Storyboard « 01 — La Promesse » en quatre scènes : une file devant un centre médical, un dispositif dans un boîtier, une consultation et la lecture d’un livre dans un salon." width="1536" height="1024" loading="lazy"></a>
+              <figcaption>Un storyboard de l’introduction : « 01 — La Promesse ». <a data-image-modal href="../images/jeu-video-storyboard-la-promesse.png" rel="noopener noreferrer">Agrandir le storyboard</a>.</figcaption>
+            </figure>
+          </section>
+          <section>
+            <h2>Trouver la voix du narrateur</h2>
+            <p>Je souhaitais une voix masculine. Un ami s’est enregistré sur une phrase d’une dizaine de secondes, mais le rendu était très monotone. J'ai essayé d'indiquer un rythme à Astra (ralentir les fins de phrase, travailler autour de la ponctuation, etc.), cela améliorait le rendu mais je n'étais toujours pas satisfaite. Je me suis alors enregistrée, puis Astra a mixé nos deux voix.</p>
+            <p>Je ne suis pas parfaitement satisfaite du résultat, mais je le trouve suffisamment bon pour le conserver.</p>
+            <p>Je conserve toutefois de gros doutes sur la pertinence de cette voix et de ces intonations françaises dans des langues plus éloignées. Cela pourrait devenir un point de blocage en travaillant sans MCP, avec uniquement les outils déjà intégrés ou libres d’accès.</p>
+          </section>
+          <section>
+            <h2>En bonus : les premières étapes</h2>
+            <p>Cette première capture montre bien la « patte Astra ». J’ai eu du mal à m’en éloigner pour donner au jeu l’identité visuelle que je souhaitais.</p>
+            <p>C’est aussi pour cette raison que j’ai ensuite confié la génération des sprites à Opus : dans mes essais, je l’ai trouvé moins attaché à ses choix visuels habituels, il va mieux suivre la DA établie et prendre en compte les sources d'inspirations proposées.</p>
+            <figure class="detail-figure">
+              <a class="image-preview" data-image-modal href="../images/jeu-video-premiers-essais.png" aria-label="Agrandir l’image"><img src="../images/jeu-video-premiers-essais.png" alt="Une des premières versions du jeu : décor isométrique aux formes simples, maison près de l’eau, personnage Noa et interface de survie verte." width="1254" height="833" loading="lazy"></a>
+              <figcaption>Une des premières captures, avant les évolutions des graphismes et de l’interface. <a data-image-modal href="../images/jeu-video-premiers-essais.png">Agrandir la capture</a>.</figcaption>
+            </figure>
+          </section>
+        </div>
+      </div>
+    </article>
+    <div class="detail-end"><a class="text-link" href="../index.html">Tous les projets <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer container"><span>Des idées aux réalisations.</span><a href="#haut">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
